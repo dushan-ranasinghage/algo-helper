@@ -1,0 +1,33 @@
+{
+  "name": "algo-helper",
+  "version": "1.0.0",
+  "description": "A Javascript algorithms library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dushanrandika/algo-helper.git"
+  },
+  "keywords": [
+    "algorithm",
+    "algorithms",
+    "sort",
+    "sorting",
+    "search",
+    "searching",
+    "javascript"
+  ],
+  "author": "Dushan Ranasinghe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dushanrandika/algo-helper/issues"
+  },
+  "homepage": "https://github.com/dushanrandika/algo-helper#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  }
+}
