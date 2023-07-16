@@ -5,6 +5,15 @@
  * @copyright Copyright 2023 Dushan Ranasinghage, Alright Reserved.
  */
 
+/**
+ * Selection sort algorithm
+ * 
+ * @name selectionSort
+ * @since  1.0.0
+ * @access  public
+ *
+ * @property {T[]} arr Any type of array.
+ */
 function selectionSort<T>(arr: T[]): T[] {
     const length = arr.length;
   

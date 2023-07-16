@@ -5,6 +5,15 @@
  * @copyright Copyright 2023 Dushan Ranasinghage, Alright Reserved.
  */
 
+/**
+ * Insertion sort algorithm
+ * 
+ * @name insertionSort
+ * @since  1.0.0
+ * @access  public
+ *
+ * @property {T[]} arr Any type of array.
+ */
 function insertionSort<T>(arr: T[]): T[] {
     const length = arr.length;
   

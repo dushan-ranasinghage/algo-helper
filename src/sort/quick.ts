@@ -5,6 +5,15 @@
  * @copyright Copyright 2023 Dushan Ranasinghage, Alright Reserved.
  */
 
+/**
+ * Quick sort algorithm
+ * 
+ * @name quickSort
+ * @since  1.0.0
+ * @access  public
+ *
+ * @property {T[]} arr Any type of array.
+ */
 function quickSort<T>(arr: T[]): T[] {
     if (arr.length <= 1) {
       return arr;

@@ -5,6 +5,15 @@
  * @copyright Copyright 2023 Dushan Ranasinghage, Alright Reserved.
  */
 
+/**
+ * Bubble sort algorithm
+ * 
+ * @name bubbleSort
+ * @since  1.0.0
+ * @access  public
+ *
+ * @property {T[]} arr Any type of array.
+ */
 function bubbleSort<T>(arr: T[]): T[] {
     const length = arr.length;
   

@@ -5,6 +5,15 @@
  * @copyright Copyright 2023 Dushan Ranasinghage, Alright Reserved.
  */
 
+/**
+ * Merge sort algorithm
+ * 
+ * @name mergeSort
+ * @since  1.0.0
+ * @access  public
+ *
+ * @property {T[]} arr Any type of array.
+ */
 function mergeSort<T>(arr: T[]): T[] {
     if (arr.length <= 1) {
       return arr;
@@ -17,7 +26,7 @@ function mergeSort<T>(arr: T[]): T[] {
     return merge(mergeSort(left), mergeSort(right));
   }
   
-  function merge<T>(left: T[], right: T[]): T[] {
+function merge<T>(left: T[], right: T[]): T[] {
     const merged: T[] = [];
     let leftIndex = 0;
     let rightIndex = 0;

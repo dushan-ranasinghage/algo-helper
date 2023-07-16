@@ -5,6 +5,16 @@
  * @copyright Copyright 2023 Dushan Ranasinghage, Alright Reserved.
  */
 
+/**
+ * Binary search algorithm
+ * 
+ * @name binarySearch
+ * @since  1.0.0
+ * @access  public
+ *
+ * @property {T[]} arr Any type of array.
+ * @property {T} target Target element.
+ */
 function binarySearch<T>(arr: T[], target: T): number {
     let left = 0;
     let right = arr.length - 1;

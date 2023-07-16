@@ -5,6 +5,15 @@
  * @copyright Copyright 2023 Dushan Ranasinghage, Alright Reserved.
  */
 
+/**
+ * Heap sort algorithm
+ * 
+ * @name heapSort
+ * @since  1.0.0
+ * @access  public
+ *
+ * @property {T[]} arr Any type of array.
+ */
 function heapSort<T>(arr: T[]): T[] {
     buildMaxHeap(arr);
   

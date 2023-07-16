@@ -5,6 +5,16 @@
  * @copyright Copyright 2023 Dushan Ranasinghage, Alright Reserved.
  */
 
+/**
+ * Linear search algorithm
+ * 
+ * @name linearSearch
+ * @since  1.0.0
+ * @access  public
+ *
+ * @property {T[]} arr Any type of array.
+ * @property {T} target Target element.
+ */
 function linearSearch<T>(arr: T[], target: T): number {
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] === target) {
