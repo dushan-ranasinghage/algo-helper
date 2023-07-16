@@ -11,9 +11,23 @@ $ npm i algo-helper
 ```
 Note: add `--save` if you are using npm < 5.0.0
 
-## How to import?
+## How to migrate from v1.0.0 to v2.0.0?
 
-ES6:
+v1.0.0
+```js
+// Load the build.
+import { sort, search } from 'algo-helper'
+```
+
+v2.0.0
+```js
+// Load the build.
+import _algo from 'algo-helper'
+```
+
+#### Usage:
+
+v1.0.0
 ```js
 // Load the build.
 import { sort, search } from 'algo-helper'
@@ -22,21 +36,44 @@ let arr = [3,4,7,1,78,54,23]
 // Use sort method.
 let sortedArray = sort.bubbleSort(arr)
 
+```
+
+v2.0.0
+```js
+// Load the build.
+import _algo from 'algo-helper'
+
+let arr = [3,4,7,1,78,54,23]
+// Use sort method.
+let sortedArray = _algo.bubbleSort(arr)
+```
+
+## How to import?
+
+ES6:
+```js
+// Load the build.
+import _algo from 'algo-helper'
+
+let arr = [3,4,7,1,78,54,23]
+// Use sort method.
+let sortedArray = _algo.bubbleSort(arr)
+
 // Use search method.
-let index = search.linearSearch(arr,7)
+let index = _algo.linearSearch(arr,7)
 ```
 
 In Node.js:
 ```js
 // Load the build.
-var { sort, search } = require('algo-helper');
+var _algo = require('algo-helper');
 
 var arr = [3,4,7,1,78,54,23]
 // Use sort method.
-var sortedArray = sort.bubbleSort(arr)
+var sortedArray = _algo.bubbleSort(arr)
 
 // Use search method.
-var index = search.linearSearch(arr,7)
+var index = _algo.linearSearch(arr,7)
 ```
 
 ## Example
@@ -44,35 +81,35 @@ var index = search.linearSearch(arr,7)
 How to use 'sort' in ES6?
 
 ```
-import { sort } from 'algo-helper'
+import _algo from 'algo-helper'
 
 const arr = [3,2,34,65,1,8,54]
 
 // How to use bubble sort
-let bubbleSortedArr = sort.bubbleSort(arr)
+let bubbleSortedArr = _algo.bubbleSort(arr)
 // console.log(bubbleSortedArr) 
 // [1, 2, 3, 8, 34, 54, 65]
 
 // How to use insertion sort
-let insertionSortedArr = sort.insertionSort(arr) 
+let insertionSortedArr = _algo.insertionSort(arr) 
 
 // How to use selection sort
-let selectionSortedArr = sort.selectionSort(arr) 
+let selectionSortedArr = _algo.selectionSort(arr) 
 
 // How to use quick sort
 /**
  * @param {array} [array=[]] The array to inspect.
  * @param {number1} [number] The number selected from left
  * @param {number2} [number] The number selected from right
- * sort.quickSort(array, number1, number2) 
+ * _algo.quickSort(array, number1, number2) 
  */
-let quickSortedArr = sort.quickSort(arr, 1, 5) 
+let quickSortedArr = _algo.quickSort(arr, 1, 5) 
 
 // How to use merge sort
-let mergeSortedArr = sort.mergeSort(arr) 
+let mergeSortedArr = _algo.mergeSort(arr) 
 
 // How to use heap sort
-let heapSortedArr = sort.heapSort(arr)
+let heapSortedArr = _algo.heapSort(arr)
 
 ```
 
@@ -80,7 +117,7 @@ How to use 'search' in ES6?
 
 In searching, you can give the input array as an unsorted array. If the number you are looking for is not available in the array, the output will be -1. Otherwise, you will get the index of the number you have entered.
 ```
-import { search } from 'algo-helper'
+import _algo from 'algo-helper'
 
 const arr = [3,2,34,65,1,8,54]
 
@@ -88,17 +125,17 @@ const arr = [3,2,34,65,1,8,54]
 /**
  * @param {array} [array=[]] The array which is not sorted
  * @param {number1} [number] The number to find
- * sort.quickSort(array, number1, number2) 
+ * _algo.quickSort(array, number1, number2) 
  */
-let foundIndexLs = search.linearSearch(arr,1)
+let foundIndexLs = _algo.linearSearch(arr,1)
 
 // How to use binary search
 /**
  * @param {number} [number] The number to find
  * @param {arr} [array=[]] The array which is not sorted
- * sort.quickSort(array, number1, number2) 
+ * _algo.quickSort(array, number1, number2) 
  */
-let foundIndexBs = search.binarySearch(34,arr)
+let foundIndexBs = _algo.binarySearch(34,arr)
 ```
 ## Why algo-helper?
 
