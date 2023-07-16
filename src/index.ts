@@ -1,4 +1,7 @@
-export { Uuid } from './helpers/uuid';
-import uuid from './helpers/uuid';
+import * as sort from './sort';
 
-export default uuid;
+const _algo  = {
+    ...sort
+}
+
+export default _algo;
